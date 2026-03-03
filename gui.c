@@ -1,5 +1,17 @@
 #include <windows.h>
 #include <commdlg.h>
+#include <commctrl.h>
+#include <psapi.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#pragma comment(lib, "comctl32.lib")
+#pragma comment(lib, "psapi.lib")
+#pragma comment(lib, "comdlg32.lib")
+#pragma comment(lib, "msimg32.lib")
+#include <windows.h>
+#include <commdlg.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
