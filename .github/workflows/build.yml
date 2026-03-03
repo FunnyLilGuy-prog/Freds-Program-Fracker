@@ -1,0 +1,14 @@
+name: Build EXE
+on: [push]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compile
+        run: |
+          gcc gui.c -o FredsFragcker.exe -mwindows -lcomctl32 -lpsapi -lcomdlg32 -lmsimg32
+      - uses: actions/upload-artifact@v3
+        with:
+          name: FredsFragcker
+          path: FredsFragcker.exe
